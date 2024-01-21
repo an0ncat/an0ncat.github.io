@@ -12,7 +12,7 @@ jobs:
             - name: "Copy files"
               run: |
                 mkdir _site
-                cp index.html _site
+                cp acat.png gpgkey.txt index.html _site
                 cp -r .well-known _site
             - name: "Upload artifacts"
               uses: actions/upload-pages-artifact@v3.0.0
