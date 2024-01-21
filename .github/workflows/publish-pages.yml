@@ -1,6 +1,8 @@
 name: publish-pages
 run-name: ${{ github.actor }} is publishing pages
-on: [push]
+on:
+    - push
+    - workflow_dispatch
 jobs:
     build:
         runs-on: ubuntu-22.04
