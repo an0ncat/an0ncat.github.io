@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>an0ncat</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta name="color-scheme" content="dark light">
+        <meta name="charset" content="utf-8">
+
+        <style>
+            html {
+                font-family: monospace;
+                font-size: 1rem;
+            }
+            h1 { font-size: 2rem;}
+            h2 { font-size: 1.8rem;}
+            h3 { font-size: 1.6rem;}
+            h4 { font-size: 1.4rem;}
+            h5 { font-size: 1.2rem;}
+            h6 { font-size: 1.1rem;}
+
+            h1,h2,h3,h4,h5,h6 {
+                margin-bottom: 0.2rem;
+            }
+            p { margin-top: 0.2rem; }
+            img.pfp {
+                width: 8rem;
+                height: 8rem;
+            }
+            article {
+                text-align: center;
+            }
+            @media screen and (min-width: 32rem) {
+                body {
+                    width: 32rem;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+        </style>
+        <script>
+            function shuffle() {
+                let input = document.getElementById("text_input");
+                let text = input.value.toString();
+                console.log("Text " + text);
+                var output = "";
+                var i = 0;
+                var indices = [];
+                while (i < text.length) {
+                    var index = Math.floor(Math.random() * text.length);
+                    if (!indices.includes(index)) {
+                        indices.push(index);
+                        let randomChar = text.charAt(index);
+                        output += randomChar;
+                        i++;
+                    }
+                }
+                document.getElementById("heading").innerHTML = output;
+            }
+        </script>
+    </head>
+    <body>
+        <article>
+            <h1 id="heading">Shuffle it!</h1>
+            <p>Enter something you want to shuffle!</p>
+            <form>
+                <input id="text_input" type="text" name="input"/>
+                <button type="button" onclick="shuffle()">Submit</button>
+            </form>
+        </article>
+    </body>
+</html>
