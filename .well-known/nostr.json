@@ -1,9 +1,9 @@
 {
     "names": {
-        "_": "c9a40aa7ce0de0de44e73b32e8f0176bbba84da97a179d498b62613a66dc6195"
+        "_": "ecdf3c757c185e8c47f48d1994e6d722f72a53fef0ff839fe26fab44425a79c7"
     },
     "relays": {
-        "c9a40aa7ce0de0de44e73b32e8f0176bbba84da97a179d498b62613a66dc6195": [
+        "ecdf3c757c185e8c47f48d1994e6d722f72a53fef0ff839fe26fab44425a79c7": [
             "wss://relay.primal.net",
             "wss://nos.lol",
             "wss://relay.damus.io",
